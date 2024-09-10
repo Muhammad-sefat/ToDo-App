@@ -82,7 +82,7 @@ button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: var(--teal);
+  background-color: var(--purple);
   color: var(--text);
   font-size: 30px;
   display: flex;
@@ -90,4 +90,41 @@ button {
   justify-content: center;
   outline: none;
   border: none;
+}
+
+#task-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.taskItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 10px;
+  background-color: var(--secondaryBackground);
+}
+
+.task {
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+}
+.task input {
+  width: 18px;
+}
+.completed p {
+  text-decoration: line-through;
+  color: var(--teal);
+}
+.icons {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
 }
